@@ -6,7 +6,7 @@ public class ConstructorInheritance {
 		new Parent();
 		new Child();
 		new Child("sai");
-		//new Child(200);
+		new Child(200);
 		new Parent(300);
 	}
 
