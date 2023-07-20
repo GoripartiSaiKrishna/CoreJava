@@ -9,15 +9,24 @@ package com.constructor;
 public class ConstructorClass {
 	String name;
 	int rollno;
+	String subject;
 	
 	ConstructorClass(String name,int rollno){
 		this.name = name;
 		this.rollno = rollno;
 	}
+	
+	ConstructorClass(String name,int rollno, String subject){
+		this.name = name;
+		this.rollno = rollno;
+		this.subject = subject;
+	}
+	
 
 	public static void main(String[] args) {
 		ConstructorClass c1 = new ConstructorClass("sai",100);
 		ConstructorClass c2 = new ConstructorClass("krishna",200);
+		ConstructorClass c3 = new ConstructorClass("krishna",300,"ECE");
 		
 		System.out.println(c1);
 		System.out.println(c2);
